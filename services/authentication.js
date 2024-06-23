@@ -3,7 +3,7 @@ const JWT = require("jsonwebtoken");
 const secret = "pratikash123";
 
 function createTokenForUser(user) {
-    const payload = {
+    const payload = { 
         _id: user._id,
         email: user.email,
         profileImageURL: user.profileImageURL,
